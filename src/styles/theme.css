@@ -1,0 +1,12 @@
+body {
+	--font-size-default: 16px;
+	--font-family-default: 'Montserrat', sans-serif;
+
+	--color-text-default: #292929;
+	--color-background: #fdfdfd;
+	--color-gold: #967e25;
+	--color-red: #ac0000;
+	--color-black: #292929;
+	--color-white: #ffffff;
+	--color-grey: #efeeee;
+}
