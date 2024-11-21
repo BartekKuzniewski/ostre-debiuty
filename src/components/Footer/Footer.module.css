@@ -1,0 +1,96 @@
+.footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	padding: 2rem 3rem;
+	gap: 1rem;
+	background-color: var(--color-dark);
+}
+
+.footerLogo {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	transition: color 0.3s;
+}
+
+.footerInfo {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerRules {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.75rem;
+}
+
+.footerEmail {
+	margin: 2rem 0;
+}
+
+.footerCopyrights {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+/* 
+.footerContent {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+
+
+.footerLogoLink:hover {
+	color: gold;
+}
+
+.footerLogo {
+	width: 40px;
+	height: 40px;
+}
+
+
+
+
+
+.footerEmailLink {
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.footerEmailLink:hover {
+	color: gold;
+}
+
+.footerRights {
+	font-size: 12px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.footerLinks {
+	display: flex;
+	gap: 20px;
+}
+
+.footerLink {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	transition: color 0.3s;
+}
+
+.footerLink:hover {
+	color: gold;
+} */
