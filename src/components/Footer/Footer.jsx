@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.webp';
 
 function Footer() {
 	return (
@@ -10,13 +10,15 @@ function Footer() {
 				<img
 					src={logo}
 					alt='Logo Ostre Debiuty'
-					className={styles.footerLogo}
+					className={styles.footerLogoImg}
 				/>
 				<h3 className={styles.footerTitle}>
 					OSTRE <br /> DEBIUTY
 				</h3>
 			</Link>
+
 			<p className={styles.footerEmail}>E-MAIL: KONTAKT@OSTRE-DEBIUTY.PL </p>
+			
 			<div className={styles.footerInfo}>
 				<div className={styles.footerCopyrights}>
 					<span>2024 OSTRE DEBIUTY</span>
