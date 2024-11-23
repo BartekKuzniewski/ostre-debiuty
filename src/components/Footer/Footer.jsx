@@ -1,24 +1,15 @@
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
-import logo from '../../assets/logo.webp';
+import { Logo } from '../Logo/Logo';
 
 function Footer() {
 	return (
 		<footer className={styles.footer}>
-			<Link to='/' className={styles.footerLogo}>
-				<img
-					src={logo}
-					alt='Logo Ostre Debiuty'
-					className={styles.footerLogoImg}
-				/>
-				<h3 className={styles.footerTitle}>
-					OSTRE <br /> DEBIUTY
-				</h3>
-			</Link>
-
+			<Logo />
+		
 			<p className={styles.footerEmail}>E-MAIL: KONTAKT@OSTRE-DEBIUTY.PL </p>
-			
+
 			<div className={styles.footerInfo}>
 				<div className={styles.footerCopyrights}>
 					<span>2024 OSTRE DEBIUTY</span>
