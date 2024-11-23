@@ -1,10 +1,10 @@
 import Footer from '../Footer/Footer';
-import { Navigation } from '../Navigation/Navigation';
+import { Navbar } from '../Navbar/Navbar';
 
 export function Layout() {
 	return (
 		<>
-			<Navigation />
+			<Navbar />
 			<Footer />
 		</>
 	);
