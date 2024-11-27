@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 import { FiUser } from 'react-icons/fi';
 import { LuShoppingCart } from 'react-icons/lu';
 
-import styles from './DesktopNavbar.module.css'
+import styles from './DesktopNavbar.module.css';
 
 export function DesktopNavbar() {
 	return (
-		<div >
+		<div>
 			<ul className={styles.desktopNavList}>
 				<li>
 					<Link to='/kursy' className={styles.desktopNavLink}>
