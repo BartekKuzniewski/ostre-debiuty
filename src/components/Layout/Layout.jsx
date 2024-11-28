@@ -1,10 +1,11 @@
-import Footer from '../Footer/Footer';
 import { Navbar } from '../Navbar/Navbar';
+import { Footer } from '../Footer/Footer';
 
-export function Layout() {
+export function Layout({ children }) {
 	return (
 		<>
 			<Navbar />
+			{children}
 			<Footer />
 		</>
 	);
