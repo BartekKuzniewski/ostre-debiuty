@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Logo } from '../Logo/Logo';
 import styles from './Footer.module.css';
 
+
 export function Footer() {
 	return (
 		<footer className={styles.footer}>

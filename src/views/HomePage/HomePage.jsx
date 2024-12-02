@@ -2,7 +2,7 @@ import { Layout } from '../../components/Layout/Layout';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
 import styles from './HomePage.module.css';
 
-import headerImg from '../../assets/header-img.svg';
+import headerImage from '../../assets/header-img.svg';
 
 export function HomePage() {
 	return (
@@ -23,9 +23,9 @@ export function HomePage() {
 							</p>
 							<button className={styles.button}>zobacz więcej</button>
 						</div>
-						<div >
-							<img className={headerImg}
-								src={headerImg}
+						<div className={styles.headerImg}>
+							<img
+								src={headerImage}
 								alt='Król siedzący na tronie w otoczeniu pionów szachowych'
 							/>
 						</div>

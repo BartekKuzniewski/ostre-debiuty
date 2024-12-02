@@ -16,6 +16,7 @@ export function Navbar() {
 
 	return (
 		<nav className={styles.nav}>
+
 			<Logo />
 
 			<div>
@@ -52,7 +53,7 @@ export function Navbar() {
 					</li>
 				</ul>
 				<div className={styles.navBurgerBtn} onClick={handleShowNavbar}>
-					<GiHamburgerMenu  />
+					<GiHamburgerMenu />
 				</div>
 			</div>
 		</nav>
