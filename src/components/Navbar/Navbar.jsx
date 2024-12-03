@@ -16,44 +16,45 @@ export function Navbar() {
 
 	return (
 		<nav className={styles.nav}>
+			<div className={styles.wrapper}>
+				<Logo />
 
-			<Logo />
-
-			<div>
-				<ul className={`${styles.navItems} ${showNavbar && styles.active} `}>
-					<li>
-						<NavLink className={styles.navItem} to='/kursy'>
-							kursy
-						</NavLink>
-					</li>
-					<li>
-						<NavLink className={styles.navItem} to='/trenerzy'>
-							trenerzy
-						</NavLink>
-					</li>
-					<li>
-						<NavLink className={styles.navItem} to='/o-nas'>
-							o nas
-						</NavLink>
-					</li>
-					<li>
-						<NavLink className={styles.navItem} to='/kontakt'>
-							kontakt
-						</NavLink>
-					</li>
-					<li>
-						<NavLink className={styles.navItem} to='/zaloguj-sie'>
-							<FiUser />
-						</NavLink>
-					</li>
-					<li>
-						<NavLink className={styles.navItem} to='/koszyk'>
-							<LuShoppingCart />
-						</NavLink>
-					</li>
-				</ul>
-				<div className={styles.navBurgerBtn} onClick={handleShowNavbar}>
-					<GiHamburgerMenu />
+				<div>
+					<ul className={`${styles.navItems} ${showNavbar && styles.active} `}>
+						<li>
+							<NavLink className={styles.navItem} to='/kursy'>
+								kursy
+							</NavLink>
+						</li>
+						<li>
+							<NavLink className={styles.navItem} to='/trenerzy'>
+								trenerzy
+							</NavLink>
+						</li>
+						<li>
+							<NavLink className={styles.navItem} to='/o-nas'>
+								o nas
+							</NavLink>
+						</li>
+						<li>
+							<NavLink className={styles.navItem} to='/kontakt'>
+								kontakt
+							</NavLink>
+						</li>
+						<li>
+							<NavLink className={styles.navItem} to='/zaloguj-sie'>
+								<FiUser />
+							</NavLink>
+						</li>
+						<li>
+							<NavLink className={styles.navItem} to='/koszyk'>
+								<LuShoppingCart />
+							</NavLink>
+						</li>
+					</ul>
+					<div className={styles.navBurgerBtn} onClick={handleShowNavbar}>
+						<GiHamburgerMenu />
+					</div>
 				</div>
 			</div>
 		</nav>

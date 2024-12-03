@@ -1,12 +1,16 @@
 .footer {
 	width: 100%;
+	padding: 2rem 3rem;
+	background-color: var(--color-dark);
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 100rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: start;
-	padding: 2rem 3rem;
-	gap: 1rem;
-	background-color: var(--color-dark);
 }
 
 .footerInfo {
@@ -33,7 +37,7 @@
 }
 
 @media (max-width: 768px) {
-	.footer {
+	.wrapper {
 		align-items: center;
 	}
 	.footerEmail {
