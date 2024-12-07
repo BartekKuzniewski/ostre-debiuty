@@ -1,4 +1,5 @@
 import { Header } from '../../components/Header/Header';
+import { KnowUsBetter } from '../../components/KnowUsBetter/KnowUsBetter';
 import { Layout } from '../../components/Layout/Layout';
 import { OurCourses } from '../../components/OurCourses/OurCourses';
 
@@ -10,6 +11,7 @@ export function HomePage() {
 			<Header />
 			<main className={styles.main}>
 				<OurCourses />
+				<KnowUsBetter />
 			</main>
 		</Layout>
 	);

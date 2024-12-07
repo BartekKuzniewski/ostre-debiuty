@@ -5,16 +5,7 @@ import hallowenGambit from '../../assets/hallowen-gambit.svg';
 import ruyLopez from '../../assets/ruy-lopez.svg';
 import smazonaWatrobka from '../../assets/smazona-watrobka.svg';
 import twoKnightsDefense from '../../assets/two-knights-defense.svg';
-// const card = [
-// 	{
-// 		img: hallowenGambit,
-// 		imgAlt: 'Król i skoczek w asyście pionów',
-// 		title: 'kurs hallowen gambit',
-// 		description:
-// 			'W tym kursie dowiesz się wszystkich informacji, które pozwolą Ci odnaleźć się w każdej sytuacji związanej z Halloween Gambit. Kurs dla szachistów na każdym poziomie.',
-// 		price: '99zł',
-// 	},
-// ];
+
 
 export function OurCourses() {
 	return (

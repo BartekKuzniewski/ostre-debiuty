@@ -1,0 +1,39 @@
+.knowUs {
+	background-color: var(--color-background-darker);
+	width: 100%;
+	padding: 3rem 2rem;
+}
+
+.knowUsHeading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-grow: 1;
+	gap: 0.5rem;
+	margin-bottom: 4rem;
+	letter-spacing: 0.1rem;
+}
+
+.knowUsContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.knowUsContentInfo {
+	width: 60%;
+}
+
+.knowUsContentInfo p {
+	margin-bottom: 1em;
+	line-height: 1.5em;
+}
+
+.knowUsContentInfo h3 {
+	margin: 1em 0 0.5em 0;
+}
+
+.knowUsContentInfo span {
+	font-weight: bold;
+}
