@@ -1,35 +1,32 @@
 import styles from './Card.module.css';
 
-import hallowenGambit from '../../assets/hallowen-gambit.svg';
 
-export function Card() {
+
+
+export function Card({img, imgAlt, title, description, price}) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.cardFront}>
 				<div>
 					<img
-						src={hallowenGambit}
+						src={img}
 						className={styles.cardFrontImage}
-						alt='Król i skoczek w asyście pionów'
+						alt={imgAlt}
 					/>
 				</div>
 				<div className={styles.cardFrontInfo}>
-					<h3 className={styles.cardFrontTitle}>Kurs Hallowen Gambit</h3>
+					<h3 className={styles.cardFrontTitle}>{title}</h3>
 				</div>
 			</div>
 			<div className={styles.cardBack}>
 				<img
-					src={hallowenGambit}
+					src={img}
 					className={styles.cardBackImage}
-					alt='Król i skoczek w asyście pionów'
+					alt={imgAlt}
 				/>
-				<h3 className={styles.cardBackTitle}>Kurs Hallowen Gambit</h3>
-				<p className={styles.cardBackDescription}>
-					W tym kursie dowiesz się wszystkich informacji, które pozwolą Ci
-					odnaleźć się w każdej sytuacji związanej z Halloween Gambit. Kurs dla
-					szachistów na każdym poziomie.
-				</p>
-				<p className={styles.cardBackPrice}>99 zł</p>
+				<h3 className={styles.cardBackTitle}>{title}</h3>
+				<p className={styles.cardBackDescription}>{description}</p>
+				<p className={styles.cardBackPrice}>{price}</p>
 				<button className={styles.button}>sprawdź szczegóły</button>
 			</div>
 		</div>

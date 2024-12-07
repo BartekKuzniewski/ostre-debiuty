@@ -1,12 +1,26 @@
 import { Card } from '../Card/Card';
 import { Wrapper } from '../Wrapper/Wrapper';
 import styles from './OurCourses.module.css';
+import hallowenGambit from '../../assets/hallowen-gambit.svg';
+import ruyLopez from '../../assets/ruy-lopez.svg';
+import smazonaWatrobka from '../../assets/smazona-watrobka.svg';
+import twoKnightsDefense from '../../assets/two-knights-defense.svg';
+// const card = [
+// 	{
+// 		img: hallowenGambit,
+// 		imgAlt: 'Król i skoczek w asyście pionów',
+// 		title: 'kurs hallowen gambit',
+// 		description:
+// 			'W tym kursie dowiesz się wszystkich informacji, które pozwolą Ci odnaleźć się w każdej sytuacji związanej z Halloween Gambit. Kurs dla szachistów na każdym poziomie.',
+// 		price: '99zł',
+// 	},
+// ];
 
 export function OurCourses() {
 	return (
 		<section className={styles.ourCourses}>
 			<Wrapper>
-				<h2 className={styles.ourCoursesHeading}>
+				<div className={styles.ourCoursesHeading}>
 					<svg
 						width='65'
 						height='64'
@@ -19,11 +33,37 @@ export function OurCourses() {
 							fill='#f2f2f2'
 						></path>
 					</svg>
-					Nasze kursy
-				</h2>
+					<h2>Nasze Kursy</h2>
+				</div>
 				<div className={styles.cards}>
-					<Card />
-					<Card />
+					<Card
+						img={hallowenGambit}
+						imgAlt='Król i skoczek w asyście pionów'
+						title='kurs hallowen gambit'
+						price='99zł'
+						description='W tym kursie dowiesz się wszystkich informacji, które pozwolą Ci odnaleźć się w każdej sytuacji związanej z Halloween Gambit. Kurs dla szachistów na każdym poziomie.'
+					/>
+					<Card
+						img={smazonaWatrobka}
+						imgAlt='Król w asyście piona i wieży'
+						title='kurs ataku smażonej wątróbki'
+						price='129zł'
+						description='W tym kursie dowiesz się wszystkich informacji, które pozwolą Ci nienagannie wykonać Atak smażonej wątróbki. Kurs dla szachistów na każdym poziomie.'
+					/>
+					<Card
+						img={twoKnightsDefense}
+						imgAlt='Król w asyście hetmana i piona'
+						title='kurs two knights defense'
+						price='119zł'
+						description='Ten kurs pomoże Ci dogłębnie poznać połączenie technik Two Knights Defense, Max Lange Attack. Kurs dla szachistów na każdym poziomie.'
+					/>
+					<Card
+						img={ruyLopez}
+						imgAlt='Król w asyście pionów'
+						title='KURS OTWARCIA RUY LÓPEZ: JAENISCH GAMBIT'
+						price='199zł'
+						description='Ten kurs pozwoli ci poznać tajniki tego otwarcia. Dowiesz się jak reagować na sytuację na szachownicy oraz na co uważać, żeby samemu nie dać wpędzić się w pułapkę.'
+					/>
 				</div>
 			</Wrapper>
 		</section>
