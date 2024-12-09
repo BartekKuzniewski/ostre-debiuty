@@ -21,8 +21,8 @@ export function Trainers() {
 						<p>2007</p>
 					</div>
 					<div className={styles.trainersExp}>
+						<p>Doświadczenie:</p>
 						<p>16 lat</p>
-						<p>gry w szachy</p>
 					</div>
 				</div>
 			</div>

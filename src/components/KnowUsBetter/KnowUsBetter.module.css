@@ -22,7 +22,7 @@
 }
 
 .knowUsContentInfo {
-	width: 60%;
+	width: 50%;
 }
 
 .knowUsContentInfo p {
@@ -31,9 +31,30 @@
 }
 
 .knowUsContentInfo h3 {
-	margin: 1em 0 0.5em 0;
+	margin: 1em 0 0.75em 0;
 }
 
 .knowUsContentInfo span {
 	font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+	.knowUsContentInfo {
+		width: 100%;
+		margin-bottom: 3em;
+	}
+
+	.knowUsContentInfo p:last-of-type {
+		margin-bottom: 3em;
+	}
+
+	.knowUsContent {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+	.knowUsContentInfo p:last-of-type {
+		margin-bottom: 0;
+	}
 }

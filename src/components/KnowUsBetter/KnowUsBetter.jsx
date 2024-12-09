@@ -53,7 +53,7 @@ export function KnowUsBetter() {
 							</p>
 						</div>
 					</div>
-					<div>
+					<div className={styles.knowUsContentTrainers}>
 						<Trainers />
 						<Trainers />
 					</div>

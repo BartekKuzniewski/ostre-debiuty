@@ -1,5 +1,7 @@
 .trainers {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-bottom: 2em;
 }
 
@@ -19,6 +21,33 @@
 
 .trainersDetails {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
 	gap: 2em;
+}
+.trainersDetails p {
+	margin-bottom: 1em;
+}
+
+.trainersDetails p:nth-child(2n) {
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.trainers {
+		flex-direction: column;
+		margin-bottom: 2em;
+	}
+
+	.trainersImg {
+		margin-bottom: 1em;
+	}
+}
+
+@media (max-width: 568px) {
+	.trainersDetails {
+		flex-direction: column;
+		gap: 0;
+	}
 }
