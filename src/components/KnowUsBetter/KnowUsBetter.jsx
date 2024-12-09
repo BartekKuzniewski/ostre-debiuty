@@ -1,5 +1,8 @@
 import { Trainers } from '../Trainers/Trainers';
 import { Wrapper } from '../Wrapper/Wrapper';
+
+import bartekImg from '../../assets/bartek.png';
+import igorImg from '../../assets/igor.png';
 import styles from './KnowUsBetter.module.css';
 
 export function KnowUsBetter() {
@@ -54,8 +57,20 @@ export function KnowUsBetter() {
 						</div>
 					</div>
 					<div className={styles.knowUsContentTrainers}>
-						<Trainers />
-						<Trainers />
+						<Trainers
+							img={bartekImg}
+							name='Bartosz Rudecki'
+							chessTitle='IM'
+							rank='1802'
+							exp='16'
+						/>
+						<Trainers
+							img={igorImg}
+							name='Igor Janik'
+							chessTitle='GM'
+							rank='2008'
+							exp='19'
+						/>
 					</div>
 				</div>
 			</Wrapper>
