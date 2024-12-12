@@ -1,0 +1,38 @@
+.trustUs {
+	background-color: var(--color-background);
+	width: 100%;
+	padding: 3rem 2rem;
+}
+
+.trustUsHeading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-grow: 1;
+	gap: 0.5rem;
+	margin-bottom: 4rem;
+	letter-spacing: 0.1rem;
+}
+
+.trustUsContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    gap: 4em;
+}
+
+.trustUsContent h3 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.trustUsContent p {
+    line-height: 1.5em;
+}
+
+.trustUsImg img {
+    display: block;
+    width: 400px;
+    height: auto;
+}
