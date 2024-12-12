@@ -2,6 +2,11 @@ import { Wrapper } from '../Wrapper/Wrapper';
 import styles from './TrustUs.module.css';
 
 import trustUsImg from '../../assets/trustUsImg.svg';
+import szymonImg from '../../assets/szymon.svg';
+import juliaImg from '../../assets/julia.svg';
+import igorImg from '../../assets/igor.svg';
+import patrykImg from '../../assets/patryk.svg';
+import { TrainerShowcase } from '../TrainerShowcase/TrainerShowcase';
 
 export function TrustUs() {
 	return (
@@ -38,10 +43,33 @@ export function TrustUs() {
 							najwyższym poziomie! To Ty decydujesz czy wybierzesz gotowy kurs,
 							czy indywidualne lekcję z trenerem.
 						</p>
+
+						<div className={styles.trustUsTrainers}>
+							<TrainerShowcase
+								img={szymonImg}
+								name='szymon gumularz'
+								description='Arcymistrz, TOP 10 Polski, 18 medali mistrzostw na całym świecie'
+							/>
+							<TrainerShowcase
+								img={igorImg}
+								name='igor janik'
+								description='Arcymistrz, Wicemistrz Świata Juniorów, 20-krotny medalista mistrzostw'
+							/>
+							<TrainerShowcase
+								img={juliaImg}
+								name='julia antolak'
+								description='Arcymistrzyni, wielokrotna medalistka mistrzostw na świecie, Kadra Narodowa'
+							/>
+							<TrainerShowcase
+								img={patrykImg}
+								name='patryk chylewski'
+								description='Mistrz Międzynarodowy wielokrotny medalista Polski'
+							/>
+						</div>
 					</div>
 
 					<div className={styles.trustUsImg}>
-						<img src={trustUsImg}></img>
+						<img src={trustUsImg} alt='Człowiek myślący nad szachami'></img>
 					</div>
 				</div>
 			</Wrapper>

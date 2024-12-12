@@ -19,20 +19,26 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    gap: 4em;
+	gap: 4em;
 }
 
-.trustUsContent h3 {
-    text-transform: uppercase;
-    margin-bottom: 1em;
+.trustUsInfo h3 {
+	text-transform: uppercase;
+	margin-bottom: 1em;
 }
 
-.trustUsContent p {
-    line-height: 1.5em;
+.trustUsInfo p {
+	line-height: 1.5em;
 }
 
 .trustUsImg img {
-    display: block;
-    width: 400px;
-    height: auto;
+	display: block;
+	width: 400px;
+	height: auto;
+}
+
+.trustUsTrainers {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
