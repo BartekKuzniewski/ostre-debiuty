@@ -2,6 +2,7 @@ import { Header } from '../../components/Header/Header';
 import { KnowUsBetter } from '../../components/KnowUsBetter/KnowUsBetter';
 import { Layout } from '../../components/Layout/Layout';
 import { OurCourses } from '../../components/OurCourses/OurCourses';
+import { Quality } from '../../components/Quality/Quality';
 import { TrustUs } from '../../components/TrustUs/TrustUs';
 
 import styles from './HomePage.module.css';
@@ -14,6 +15,7 @@ export function HomePage() {
 				<OurCourses />
 				<KnowUsBetter />
 				<TrustUs />
+				<Quality />
 			</main>
 		</Layout>
 	);
