@@ -4,6 +4,9 @@ import aboutUs1 from '../../assets/aboutUs1.jpg';
 import aboutUs2 from '../../assets/aboutUs2.jpg';
 import aboutUs3 from '../../assets/aboutUs3.jpg';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
+import { TeamMember } from '../../components/TeamMember/TeamMember';
+
+
 
 export function AboutUs() {
 	return (
@@ -27,7 +30,6 @@ export function AboutUs() {
 								fill='#f2f2f2'
 							></path>
 						</svg>
-
 						<h2>O Nas</h2>
 					</div>
 
@@ -89,6 +91,11 @@ export function AboutUs() {
 						<div className={styles.aboutUsImg}>
 							<img src={aboutUs3} alt='' />
 						</div>
+					</div>
+
+					<div >
+						<h3 className={styles.ourTeamHeading}> Nasz Zespół</h3>
+						<TeamMember />
 					</div>
 				</Wrapper>
 			</main>
