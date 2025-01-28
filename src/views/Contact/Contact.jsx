@@ -1,7 +1,6 @@
 import { ContactForm } from '../../components/ContactForm/ContactForm';
 import { Layout } from '../../components/Layout/Layout';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
-import contactImg from '../../assets/two-knights-defense.svg';
 import styles from './Contact.module.css';
 
 export function Contact() {

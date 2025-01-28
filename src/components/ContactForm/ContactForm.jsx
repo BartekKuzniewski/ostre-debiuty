@@ -1,10 +1,65 @@
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css';
 
+// const key = import.meta.env.VITE_PUBLIC_KEY;
+
 export function ContactForm() {
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
+	const [errors, setErrors] = useState({});
+	const [showModal, setShowModal] = useState(true);
+
+	function handleSubmit(e) {
+		e.preventDefault();
+		if (!formValidation()) return;
+
+		const serviceId = 'service_uafw0ad';
+		const temaplateId = 'template_fnvvbxl';
+		const publicKey = 'KFNIyBty3QqB9mJLR';
+
+		const templateData = {
+			from_name: name,
+			from_email: email,
+			to_name: 'Ostre Debiuty',
+			message: message,
+		};
+
+		emailjs
+			.send(serviceId, temaplateId, templateData, publicKey)
+			.then((response) => {
+				console.log('Email seny sucessfull!!', response);
+				setShowModal(true);
+				setName('');
+				setEmail('');
+				setMessage('');
+				setErrors({});
+			})
+			.catch((error) => console.error('Error sendig email:', error));
+
+		console.log(name, email, message);
+	}
+
+	function formValidation() {
+		const newErrors = {};
+		if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+			newErrors.email = 'Podaj poprawny adres email';
+		}
+		if (name.trim().length < 3) {
+			newErrors.name = 'Imię musi mieć co najmniej 3 znaki';
+		}
+		if (message.trim().length < 3) {
+			newErrors.message = 'Wiadomość musi mieć co najmniej 3 znaki';
+		}
+		setErrors(newErrors);
+		return Object.keys(newErrors).length === 0;
+	}
+
 	return (
 		<div className={styles.contactForm}>
 			<h3 className={styles.title}>Skontakuj się z nami</h3>
-			<form className={styles.form}>
+			<form className={styles.form} onSubmit={handleSubmit}>
 				<div className={styles.formField}>
 					<label htmlFor='name' className={styles.label}>
 						Twoje Imię
@@ -12,9 +67,12 @@ export function ContactForm() {
 					<input
 						type='text'
 						id='name'
+						value={name}
+						onChange={(e) => setName(e.target.value)}
 						placeholder='Jak masz na imię?'
-						className={styles.input}
+						className={`${styles.input} ${errors.name ? styles.error : ''}`}
 					/>
+					{errors.name && <p className={styles.errorMessage}>{errors.name}</p>}
 				</div>
 				<div className={styles.formField}>
 					<label htmlFor='mail' className={styles.label}>
@@ -23,9 +81,14 @@ export function ContactForm() {
 					<input
 						type='text'
 						id='name'
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
 						placeholder='Jaki masz e-mail?'
-						className={styles.input}
+						className={`${styles.input} ${errors.email ? styles.error : ''}`}
 					/>
+					{errors.email && (
+						<p className={styles.errorMessage}>{errors.email}</p>
+					)}
 				</div>
 				<div className={styles.formField}>
 					<label htmlFor='message' className={styles.label}>
@@ -33,62 +96,35 @@ export function ContactForm() {
 					</label>
 					<textarea
 						id='message'
+						value={message}
+						onChange={(e) => setMessage(e.target.value)}
 						placeholder='O co chcesz zapytać?'
-						className={styles.textarea}
+						className={`${styles.textarea} ${
+							errors.message ? styles.error : ''
+						}`}
 					></textarea>
+					{errors.message && (
+						<p className={styles.errorMessage}>{errors.message}</p>
+					)}
 				</div>
 				<button type='submit' className={styles.button}>
 					Wyślij
 				</button>
 			</form>
+
+			{showModal && (
+				<div className={styles.modal}>
+					<div className={styles.modalContent}>
+						<p>Email został wysłany pomyślnie!</p>
+						<button
+							className={styles.button}
+							onClick={() => setShowModal(false)}
+						>
+							Zamknij
+						</button>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 }
-
-// import React from "react";
-// import styles from "./ContactForm.module.css";
-
-// const ContactForm = () => {
-//   return (
-//     <div className={styles.container}>
-//       <h2 className={styles.title}>Get in Touch</h2>
-//       <h1 className={styles.heading}>Contact.</h1>
-//       <form className={styles.form}>
-//         <label htmlFor="name" className={styles.label}>
-//           Your Name
-//         </label>
-//         <input
-//           type="text"
-//           id="name"
-//           placeholder="What's your name?"
-//           className={styles.input}
-//         />
-
-//         <label htmlFor="email" className={styles.label}>
-//           Your Email
-//         </label>
-//         <input
-//           type="email"
-//           id="email"
-//           placeholder="What's your email?"
-//           className={styles.input}
-//         />
-
-//         <label htmlFor="message" className={styles.label}>
-//           Your Message
-//         </label>
-//         <textarea
-//           id="message"
-//           placeholder="What do you want to say?"
-//           className={styles.textarea}
-//         ></textarea>
-
-//         <button type="submit" className={styles.button}>
-//           Send
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default ContactForm;
