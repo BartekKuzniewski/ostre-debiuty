@@ -1,0 +1,40 @@
+.coaches {
+	background-color: var(--color-background);
+	width: 100%;
+	padding: 3rem 2rem;
+}
+
+.coachesHeading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-grow: 1;
+	gap: 0.5rem;
+	margin-bottom: 4rem;
+	letter-spacing: 0.1rem;
+}
+
+.description {
+	line-height: 2rem;
+	font-size: 1.25rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	justify-items: center;
+}
+
+@media (max-width: 992px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
