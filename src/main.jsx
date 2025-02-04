@@ -9,6 +9,7 @@ import { Courses } from './views/Courses/Courses.jsx';
 import { ShoppingCart } from './views/ShoppingCart/ShoppingCart.jsx';
 import { AboutUs } from './views/AboutUs/AboutUs.jsx';
 import { Coaches } from './views/Coaches/Coaches.jsx';
+import { CoachPage } from './views/CoachPage/CoachPage.jsx';
 import { Contact } from './views/Contact/Contact.jsx';
 import { LogIn } from './views/LogIn/LogIn.jsx';
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
 	{
 		path: '/trenerzy',
 		element: <Coaches />,
+	},
+	{
+		path: '/trenerzy/:name',
+		element: <CoachPage />,
 	},
 	{
 		path: '/kontakt',

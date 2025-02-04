@@ -1,46 +1,9 @@
 import { Layout } from '../../components/Layout/Layout';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
-import szymon from '../../assets/szymon.svg';
-import julia from '../../assets/julia.svg';
-import igor from '../../assets/igor.svg';
-import patryk from '../../assets/patryk.svg';
+
+import { coachesData } from '../../constants/coachesData';
 import styles from './Coaches.module.css';
 import { CoachCard } from '../../components/CoachCard/CoachCard';
-
-const coachesData = [
-	{
-		name: 'Szymon Gumularz',
-		fide: 2591,
-		title: 'Arcymistrz',
-		description:
-			'TOP 10 Polskich szachistów. Zdobywca 18 medali na mistrzostwach w Polsce i na świecie.',
-		image: szymon,
-	},
-	{
-		name: 'Igor Janik',
-		fide: 2552,
-		title: 'Arcymistrz',
-		description:
-			'Współtwórca Ostrych Debiutów. Zdobywca ponad 20 medali szachowych, Wicemistrz Świata Juniorów.',
-		image: igor,
-	},
-	{
-		name: 'Patryk Chylewski',
-		fide: 2400,
-		title: 'Mistrz Międzynarodowy',
-		description:
-			'Wielokrotny medalista mistrzostw Polski. Prowadzi zajęcia z młodymi adeptami szachów',
-		image: patryk,
-	},
-	{
-		name: 'Julia Antolak',
-		fide: 2399,
-		title: 'Arcymistrzyni',
-		description:
-			'Wielokrotna medalistka mistrzostw w Polsce i światowych, zawodniczka Kadry Narodowej Kobiet do lat 23. Od wielu lat prowadzi zajęcia szachowe.',
-		image: julia,
-	},
-];
 
 export function Coaches() {
 	return (
@@ -77,6 +40,7 @@ export function Coaches() {
 							<CoachCard
 								key={index}
 								name={coach.name}
+								slug={coach.slug}
 								fide={coach.fide}
 								title={coach.title}
 								description={coach.description}
