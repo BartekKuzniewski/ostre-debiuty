@@ -1,8 +1,8 @@
 import { Layout } from '../../components/Layout/Layout';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
 import { coachesData } from '../../constants/coachesData';
-import styles from './Coaches.module.css';
 import { CoachCard } from '../../components/CoachCard/CoachCard';
+import styles from './Coaches.module.css';
 
 export function Coaches() {
 	return (

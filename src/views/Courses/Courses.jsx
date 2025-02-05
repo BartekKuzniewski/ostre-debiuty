@@ -1,10 +1,8 @@
 import { Card } from '../../components/Card/Card';
 import { Layout } from '../../components/Layout/Layout';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
-import hallowenGambit from '../../assets/hallowen-gambit.svg';
-import ruyLopez from '../../assets/ruy-lopez.svg';
-import smazonaWatrobka from '../../assets/smazona-watrobka.svg';
-import twoKnightsDefense from '../../assets/two-knights-defense.svg';
+
+import { coursesData } from '../../constants/coursesData';
 
 import styles from './Courses.module.css';
 
@@ -34,6 +32,20 @@ export function Courses() {
 					</div>
 
 					<div className={styles.cards}>
+						{coursesData.map((course) => (
+							<Card
+								key={course.id}
+								img={course.image}
+								slug={course.slug}
+								imgAlt={course.imgAlt}
+								title={course.name}
+								price={course.price}
+								description={course.shortDescription}
+							/>
+						))}
+					</div>
+
+					{/* <div className={styles.cards}>
 						<Card
 							img={hallowenGambit}
 							imgAlt='Król i skoczek w asyście pionów'
@@ -62,7 +74,7 @@ export function Courses() {
 							price='199zł'
 							description='Ten kurs pozwoli ci poznać tajniki tego otwarcia. Dowiesz się jak reagować na sytuację na szachownicy oraz na co uważać, żeby samemu nie dać wpędzić się w pułapkę.'
 						/>
-					</div>
+					</div> */}
 				</Wrapper>
 			</main>
 		</Layout>

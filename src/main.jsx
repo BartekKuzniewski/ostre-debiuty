@@ -12,6 +12,7 @@ import { Coaches } from './views/Coaches/Coaches.jsx';
 import { CoachPage } from './views/CoachPage/CoachPage.jsx';
 import { Contact } from './views/Contact/Contact.jsx';
 import { LogIn } from './views/LogIn/LogIn.jsx';
+import { CoursesPage } from './views/CoursesPage/CoursesPage.jsx';
 
 const router = createBrowserRouter([
 	{
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
 	{
 		path: '/kursy',
 		element: <Courses />,
+	},
+	{
+		path: '/kursy/:name',
+		element: <CoursesPage />
 	},
 	{
 		path: '/koszyk',
