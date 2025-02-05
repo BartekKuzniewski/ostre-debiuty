@@ -9,7 +9,7 @@ export function ContactForm() {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 	const [errors, setErrors] = useState({});
-	const [showModal, setShowModal] = useState(true);
+	const [showModal, setShowModal] = useState(false);
 
 	function handleSubmit(e) {
 		e.preventDefault();

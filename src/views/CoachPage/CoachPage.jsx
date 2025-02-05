@@ -2,13 +2,11 @@ import { useParams } from 'react-router-dom';
 import { coachesData } from '../../constants/coachesData';
 import { Layout } from '../../components/Layout/Layout';
 import styles from './CoachPage.module.css';
-import { Trainers } from '../../components/Trainers/Trainers';
 
 export function CoachPage() {
 	const { name } = useParams();
 	const coach = coachesData.find((c) => c.slug === name);
-	console.log('coach info');
-	console.log(coach);
+
 
 	if (!coach) {
 		return <h2>Nie znaleziono trenera</h2>;
