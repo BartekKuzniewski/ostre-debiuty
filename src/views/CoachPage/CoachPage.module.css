@@ -1,0 +1,67 @@
+.coachPage {
+	background-color: var(--color-background);
+	width: 100%;
+	padding: 3rem 2rem;
+}
+
+.coachPageHeading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-grow: 1;
+	gap: 0.5rem;
+	margin-bottom: 4rem;
+	letter-spacing: 0.1rem;
+}
+
+.coachPageContent {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	width: 100%;
+}
+
+.contentLeft {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contentLeft img {
+	width: 220px;
+	margin-bottom: 1.5em;
+}
+
+.contentLeft h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0.5em;
+}
+.contentLeft p {
+	margin-bottom: 0.5em;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.contentRight h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0.5em;
+}
+
+.contentRight p {
+	margin-bottom: 1em;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+@media (max-width: 992px) {
+	.coachPageContent {
+		grid-template-columns: 1fr;
+	}
+
+	.contentRight {
+		text-align: center;
+	}
+}
