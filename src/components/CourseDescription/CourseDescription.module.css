@@ -1,0 +1,12 @@
+.courseDescription {
+	width: 100%;
+	background-color: var(--color-dark);
+	padding: 3rem 2rem;
+}
+
+.offer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 3rem;
+}

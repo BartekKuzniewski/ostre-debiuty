@@ -2,8 +2,10 @@ import { useParams } from 'react-router-dom';
 import { Layout } from '../../components/Layout/Layout';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
 import { coursesData } from '../../constants/coursesData';
+
 import { FaRegEnvelope } from 'react-icons/fa';
 import styles from './CoursesPage.module.css';
+import { CourseDescription } from '../../components/CourseDescription/CourseDescription';
 
 export function CoursesPage() {
 	const { name } = useParams();
@@ -14,7 +16,7 @@ export function CoursesPage() {
 	}
 	return (
 		<Layout>
-			<main className={styles.coursesPage}>
+			<section className={styles.coursesPage}>
 				<Wrapper>
 					<div className={styles.container}>
 						<div className={styles.imageSection}>
@@ -38,7 +40,8 @@ export function CoursesPage() {
 						</div>
 					</div>
 				</Wrapper>
-			</main>
+			</section>
+			<CourseDescription course={course} />
 		</Layout>
 	);
 }
