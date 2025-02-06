@@ -2,10 +2,11 @@ import { useParams } from 'react-router-dom';
 import { Layout } from '../../components/Layout/Layout';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
 import { coursesData } from '../../constants/coursesData';
+import { Card } from '../../components/Card/Card';
 
+import { CourseDescription } from '../../components/CourseDescription/CourseDescription';
 import { FaRegEnvelope } from 'react-icons/fa';
 import styles from './CoursesPage.module.css';
-import { CourseDescription } from '../../components/CourseDescription/CourseDescription';
 
 export function CoursesPage() {
 	const { name } = useParams();
@@ -42,6 +43,26 @@ export function CoursesPage() {
 				</Wrapper>
 			</section>
 			<CourseDescription course={course} />
+			<section className={styles.notLookingfor}>
+				<h2>to nie tego szukasz?</h2>
+				<p>
+					Sprawdź nasze inne propozycje kursów, a na pewno znajdziesz coś co
+					odpowiada twojemu poziomowi.
+				</p>
+				<div className={styles.cards}>
+					{coursesData.map((course) => (
+						<Card
+							key={course.id}
+							img={course.image}
+							slug={course.slug}
+							imgAlt={course.imgAlt}
+							title={course.name}
+							price={course.price}
+							description={course.shortDescription}
+						/>
+					))}
+				</div>
+			</section>
 		</Layout>
 	);
 }

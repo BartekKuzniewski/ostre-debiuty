@@ -40,8 +40,8 @@
 
 .courseHeading {
 	font-size: 1.8em;
-    text-transform: uppercase;
-    margin-bottom: 1em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
 }
 
 .courseDescription {
@@ -79,4 +79,17 @@
 	background-color: #666;
 }
 
+.notLookingfor {
+	background-color: var(--color-background);
+	width: 100%;
+	padding: 3rem 2rem;
+}
 
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 1rem;
+}
