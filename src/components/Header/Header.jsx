@@ -1,7 +1,8 @@
 import { Wrapper } from '../Wrapper/Wrapper';
-import styles from './header.module.css'
+import styles from './header.module.css';
 
 import headerImage from '../../assets/header-img.svg';
+import { Button } from '../Button/Button';
 
 export function Header() {
 	return (
@@ -19,7 +20,7 @@ export function Header() {
 							Ciebie. Bez względu na to czy dopiero zaczynasz, czy może masz już
 							pierwsze zwycięstwa na szachowym polu bitwy.
 						</p>
-						<button className={styles.button}>zobacz więcej</button>
+						<Button> Zobacz więcej</Button>
 					</div>
 					<div className={styles.headerImg}>
 						<img

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css';
+import { Button } from '../Button/Button';
 
 // const key = import.meta.env.VITE_PUBLIC_KEY;
 
@@ -107,9 +108,10 @@ export function ContactForm() {
 						<p className={styles.errorMessage}>{errors.message}</p>
 					)}
 				</div>
-				<button type='submit' className={styles.button}>
+				<Button type='submit'>Wyślij</Button>
+				{/* <button type='submit' className={styles.button}>
 					Wyślij
-				</button>
+				</button> */}
 			</form>
 
 			{showModal && (
