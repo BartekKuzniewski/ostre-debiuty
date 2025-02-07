@@ -19,25 +19,23 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    gap: 3em;
+	gap: 3em;
 }
 
 .qualityImg img {
-    width: 450px;
+	width: 450px;
 }
 
 .qualityInfo {
-    padding: 2em;
-}
-
-.qualityInfo h3, p {
-    margin-bottom: 1em;
+	padding: 2em;
 }
 
 .qualityInfo h3 {
-    font-size: 1.5rem;
+	margin-bottom: .5em;
 }
 
 .qualityInfo p {
-    font-size: 1.25rem;
+	font-size: 1.1rem;
+	line-height: 1.7rem;
+	margin-bottom: 2.5em;
 }

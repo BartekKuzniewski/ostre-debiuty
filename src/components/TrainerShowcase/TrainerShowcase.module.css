@@ -3,6 +3,9 @@
 }
 
 .trainerShowcaseImg img {
-	height: auto;
 	width: 125px;
+}
+
+.trainerShowcaseName {
+	font-size: 1.1rem;
 }

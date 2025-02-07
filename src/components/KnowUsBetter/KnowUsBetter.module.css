@@ -26,11 +26,13 @@
 }
 
 .knowUsContentInfo p {
+	font-size: 1.1rem;
 	margin-bottom: 1em;
 	line-height: 1.5em;
 }
 
 .knowUsContentInfo h3 {
+	font-size: 1.4rem;
 	margin: 1em 0 0.75em 0;
 }
 

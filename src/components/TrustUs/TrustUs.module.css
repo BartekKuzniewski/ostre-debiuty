@@ -28,6 +28,7 @@
 }
 
 .trustUsInfo p {
+	font-size: 1.1rem;
 	line-height: 1.5em;
 }
 
@@ -40,5 +41,6 @@
 .trustUsTrainers {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	gap: 2rem;
 }
