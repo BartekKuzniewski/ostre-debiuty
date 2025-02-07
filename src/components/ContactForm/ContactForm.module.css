@@ -52,24 +52,6 @@
 	resize: none;
 }
 
-.button {
-	background-color: var(--color-gold);
-	border: none;
-	padding: 1.1rem;
-	color: var(--color-default);
-	font-size: 1.1rem;
-	font-weight: 700;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s;
-}
-
-.button:hover {
-	background-color: #978130;
-}
-
 .error {
 	outline: 2px solid rgb(177, 5, 5);
 }

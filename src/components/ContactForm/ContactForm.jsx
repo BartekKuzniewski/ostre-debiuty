@@ -108,10 +108,8 @@ export function ContactForm() {
 						<p className={styles.errorMessage}>{errors.message}</p>
 					)}
 				</div>
-				<Button type='submit'>Wyślij</Button>
-				{/* <button type='submit' className={styles.button}>
-					Wyślij
-				</button> */}
+				<Button type='submit' bgColor='#806e2d' hoverColor='#978130'>Wyślij</Button>
+		
 			</form>
 
 			{showModal && (

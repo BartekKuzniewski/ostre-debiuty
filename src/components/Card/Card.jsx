@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
+import { Button } from '../Button/Button';
 
 export function Card({ img, imgAlt, title, description, price, slug }) {
 	return (
@@ -17,9 +17,7 @@ export function Card({ img, imgAlt, title, description, price, slug }) {
 				<h3 className={styles.cardBackTitle}>{title}</h3>
 				<p className={styles.cardBackDescription}>{description}</p>
 				<p className={styles.cardBackPrice}>{price} zł</p>
-				<Link to={`/kursy/${slug}`} className={styles.button}>
-					sprawdź szczegóły
-				</Link>
+				<Button to={`/kursy/${slug}`}>sprawdź szczegóły</Button>
 			</div>
 		</div>
 	);
