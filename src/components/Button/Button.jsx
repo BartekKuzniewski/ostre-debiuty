@@ -5,11 +5,13 @@ export function Button({
 	children,
 	bgColor = '#292929',
 	hoverColor = '#806e2d',
+	fontSize = '1.1rem',
 	to,
 }) {
 	const buttonStyle = {
 		'--bg-color': bgColor,
 		'--hover-color': hoverColor,
+		'--font-size': fontSize,
 	};
 	if (to) {
 		return (

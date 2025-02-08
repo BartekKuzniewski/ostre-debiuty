@@ -17,7 +17,7 @@ export function Card({ img, imgAlt, title, description, price, slug }) {
 				<h3 className={styles.cardBackTitle}>{title}</h3>
 				<p className={styles.cardBackDescription}>{description}</p>
 				<p className={styles.cardBackPrice}>{price} zł</p>
-				<Button to={`/kursy/${slug}`}>sprawdź szczegóły</Button>
+				<Button to={`/kursy/${slug}`} fontSize='.9rem'>sprawdź szczegóły</Button>
 			</div>
 		</div>
 	);

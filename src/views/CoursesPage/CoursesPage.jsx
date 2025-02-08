@@ -7,6 +7,7 @@ import { Card } from '../../components/Card/Card';
 import { CourseDescription } from '../../components/CourseDescription/CourseDescription';
 import { FaRegEnvelope } from 'react-icons/fa';
 import styles from './CoursesPage.module.css';
+import { Button } from '../../components/Button/Button';
 
 export function CoursesPage() {
 	const { name } = useParams();
@@ -32,11 +33,11 @@ export function CoursesPage() {
 							<h3 className={styles.courseHeading}>{course.name}</h3>
 							<p className={styles.courseDescription}>{course.courseInfo}</p>
 							<div className={styles.purchaseSection}>
-								<span className={styles.delivery}>
-									<FaRegEnvelope /> Wysyłka natychmiastowa
-								</span>
+								<p className={styles.delivery}>
+									<FaRegEnvelope size={28} /> <span>Wysyłka natychmiastowa</span>
+								</p>
 								<span className={styles.price}>{course.price} zł</span>
-								<button className={styles.addToCart}>DO KOSZYKA</button>
+								<Button fontSize='1rem'>do koszyka </Button>
 							</div>
 						</div>
 					</div>

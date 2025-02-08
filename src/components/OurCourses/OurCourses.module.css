@@ -16,10 +16,20 @@
 }
 
 .cards {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	display: grid;
 	width: 100%;
 	gap: 1rem;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1200px) {
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
