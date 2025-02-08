@@ -4,9 +4,66 @@
 	padding: 3rem 2rem;
 }
 
-.offer {
+.courseDescription h3 {
+	font-size: 1.4rem;
+	letter-spacing: 0.05em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+.description,
+.offer,
+.learning,
+.courseAppearance,
+.courseCreator {
+	margin-bottom: 5em;
+}
+
+.paragraph {
+	font-size: 1.1rem;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+.offerItems {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	gap: 3rem;
+}
+
+.learningContainer {
+	display: flex;
+}
+
+.courseAppearanceContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6em;
+}
+
+.courseAppearanceInfo p {
+	font-size: 1.1rem;
+	margin-bottom: 1em;
+}
+
+.creator p {
+	font-size: 1.1rem;
+	margin-bottom: 2em;
+}
+
+.creator span {
+	font-weight: 700;
+}
+
+.buyCourse {
+	text-align: center;
+}
+
+.buyCourse p {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--color-gold);
+	margin-bottom: 1em;
 }

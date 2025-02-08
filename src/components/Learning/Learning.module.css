@@ -1,0 +1,10 @@
+.learning {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    gap: 1em;
+}
+
+.learning p {
+	font-size: 1.1rem;
+}

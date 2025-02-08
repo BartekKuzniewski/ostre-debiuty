@@ -15,15 +15,13 @@
 	width: 45%;
 }
 
-.trainersName {
-	margin-bottom: 0.75em;
-}
 
 .trainersDetails {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	margin-top: 4rem;
 	gap: 2em;
 }
 .trainersDetails p {

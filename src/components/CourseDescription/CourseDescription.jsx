@@ -4,6 +4,7 @@ import { offerData } from '../../constants/offerData';
 import { Learning } from '../Learning/Learning';
 import courseAppearance from '../../assets/courseAppearance.svg';
 import { Trainers } from '../Trainers/Trainers';
+import { Button } from '../../components/Button/Button';
 import bartekImg from '../../assets/bartek.png';
 import igorImg from '../../assets/igor.png';
 import styles from './CourseDescription.module.css';
@@ -12,13 +13,19 @@ export function CourseDescription({ course }) {
 	return (
 		<section className={styles.courseDescription}>
 			<Wrapper>
-				<div>
-					<h2>opis kursu</h2>
-					<p>{course.description}</p>
+				<div className={styles.description}>
+					<h3>opis kursu</h3>
+					<div>
+						{course.description.map((paragraph, index) => (
+							<p key={index} className={styles.paragraph}>
+								{paragraph}
+							</p>
+						))}
+					</div>
 				</div>
-				<div>
-					<h2>co oferujemy</h2>
-					<div className={styles.offer}>
+				<div className={styles.offer}>
+					<h3>co oferujemy</h3>
+					<div className={styles.offerItems}>
 						{offerData.map((offer) => (
 							<Offer
 								key={offer.id}
@@ -29,8 +36,8 @@ export function CourseDescription({ course }) {
 						))}
 					</div>
 				</div>
-				<div>
-					<h2>jak przebiegnie twoja nauka?</h2>
+				<div className={styles.learning}>
+					<h3>jak przebiegnie twoja nauka?</h3>
 					<div className={styles.learningContainer}>
 						<Learning
 							description={
@@ -54,41 +61,43 @@ export function CourseDescription({ course }) {
 						/>
 					</div>
 				</div>
-				<div>
-					<h2>jak wygląda kurs?</h2>
-					<div>
-						<p>
-							W ramach kursu otrzymujesz zestaw profesjonalnych lekcji w postaci
-							materiałów wideo i zadań przygotowanych przez ekspertów i
-							arcymistrzów szachowych. Napisana od zera, autorska, interaktywna
-							szachownica wraz ze specjalnie przygotowanymi zadaniami zapewnia
-							najwyższy poziom przyswojenia zdobytej wiedzy i sprawdzenia jej w
-							praktyce.
-						</p>
-						<p>
-							Responsywny design naszej strony pozwala na wygodne korzystanie z
-							oferty nie tylko na komputerze stacjonarnym, ale także na
-							urządzeniach mobilnych. Zapewniamy wygodę korzystania z każdego
-							miejsca z dostępem do internetu i o każdej porze.
-						</p>
-						<p>
-							Nie masz jeszcze konta na stronie Ostre debiuty? Bez obaw! Po
-							zakupieniu kursu stworzymy je za Ciebie i wyślemy wszystkie
-							informacje droga mailową.
-						</p>
-					</div>
-					<div>
-						<img
-							src={courseAppearance}
-							alt='Widok dedykowanej platormy na laptopie i telefonie'
-						/>
+				<div className={styles.courseAppearance}>
+					<h3>jak wygląda kurs?</h3>
+					<div className={styles.courseAppearanceContainer}>
+						<div className={styles.courseAppearanceInfo}>
+							<p>
+								W ramach kursu otrzymujesz zestaw profesjonalnych lekcji w
+								postaci materiałów wideo i zadań przygotowanych przez ekspertów
+								i arcymistrzów szachowych. Napisana od zera, autorska,
+								interaktywna szachownica wraz ze specjalnie przygotowanymi
+								zadaniami zapewnia najwyższy poziom przyswojenia zdobytej wiedzy
+								i sprawdzenia jej w praktyce.
+							</p>
+							<p>
+								Responsywny design naszej strony pozwala na wygodne korzystanie
+								z oferty nie tylko na komputerze stacjonarnym, ale także na
+								urządzeniach mobilnych. Zapewniamy wygodę korzystania z każdego
+								miejsca z dostępem do internetu i o każdej porze.
+							</p>
+							<p>
+								Nie masz jeszcze konta na stronie Ostre debiuty? Bez obaw! Po
+								zakupieniu kursu stworzymy je za Ciebie i wyślemy wszystkie
+								informacje droga mailową.
+							</p>
+						</div>
+						<div className={styles.courseAppearanceImage}>
+							<img
+								src={courseAppearance}
+								alt='Widok dedykowanej platormy na laptopie i telefonie'
+							/>
+						</div>
 					</div>
 				</div>
-				<div>
-					<h2>Kto jest twórcą kursu?</h2>
+				<div className={styles.courseCreator}>
+					<h3>Kto jest twórcą kursu?</h3>
 					{course.name === 'Kurs halloween Gambit' ||
 					course.name === 'Kurs Otwarcia Ruy Lopez: Jaenish Gambit' ? (
-						<div className={styles.courseCreator}>
+						<div className={styles.creator}>
 							<p>
 								<span>Bartosz Rudecki </span>- charyzmatyczny streamer szachowy.
 								Jego kanał na Twitchu rozwinął niejeden talent i przekonał, że
@@ -103,7 +112,7 @@ export function CourseDescription({ course }) {
 							/>
 						</div>
 					) : (
-						<div className={styles.courseCreator}>
+						<div className={styles.creator}>
 							<p>
 								<span>Igor Janik </span> - utytułowany król szachów, Arcymistrz
 								Szachowy, wielokrotny medalista mistrzostw w Polsce i na
@@ -122,7 +131,9 @@ export function CourseDescription({ course }) {
 				</div>
 				<div className={styles.buyCourse}>
 					<p>JESTEŚ ZDECYDOWANY NA ZAKUP?</p>
-					<button>Do koszyka</button>
+					<Button bgColor='#806e2d' hoverColor='#978130'>
+						do koszyka
+					</Button>
 				</div>
 			</Wrapper>
 		</section>

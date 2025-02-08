@@ -4,8 +4,8 @@ export function Learning({ description }) {
 	return (
 		<div className={styles.learning}>
 			<svg
-				width='36'
-				height='36'
+				width='80'
+				height='80'
 				viewBox='0 0 36 36'
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
@@ -15,7 +15,6 @@ export function Learning({ description }) {
 					fill='#806E2D'
 				></path>
 			</svg>
-
 			<p>{description}</p>
 		</div>
 	);
