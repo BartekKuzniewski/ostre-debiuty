@@ -4,7 +4,7 @@ import styles from './CoachCard.module.css';
 export function CoachCard({ name, fide, title, description, image, slug }) {
 	return (
 		<Link to={`/trenerzy/${slug}`} className={styles.card}>
-			{/* Przód karty */}
+
 			<div className={styles.cardFront}>
 				<img src={image} alt={name} className={styles.image} />
 				<h3 className={styles.name}>{name}</h3>
@@ -12,7 +12,7 @@ export function CoachCard({ name, fide, title, description, image, slug }) {
 				<p className={styles.title}>{title}</p>
 			</div>
 
-			{/* Tył karty */}
+
 			<div className={styles.cardBack}>
 				<img src={image} alt={name} className={styles.imageBack} />
 				<h3 className={styles.nameBack}>{name}</h3>

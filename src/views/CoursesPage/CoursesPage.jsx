@@ -44,8 +44,8 @@ export function CoursesPage() {
 				</Wrapper>
 			</section>
 			<CourseDescription course={course} />
-			<section className={styles.notLookingfor}>
-				<h2>to nie tego szukasz?</h2>
+			<section className={styles.notLookingFor}>
+				<h3>to nie tego szukasz?</h3>
 				<p>
 					Sprawdź nasze inne propozycje kursów, a na pewno znajdziesz coś co
 					odpowiada twojemu poziomowi.
