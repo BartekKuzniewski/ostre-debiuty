@@ -13,6 +13,7 @@ import { CoachPage } from './views/CoachPage/CoachPage.jsx';
 import { Contact } from './views/Contact/Contact.jsx';
 import { LogIn } from './views/LogIn/LogIn.jsx';
 import { CoursesPage } from './views/CoursesPage/CoursesPage.jsx';
+import { Rules } from './views/Rules/Rules.jsx';
 
 const router = createBrowserRouter([
 	{
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/kursy/:name',
-		element: <CoursesPage />
+		element: <CoursesPage />,
 	},
 	{
 		path: '/koszyk',
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
 	{
 		path: '/zaloguj-sie',
 		element: <LogIn />,
+	},
+	{
+		path: '/regulamin',
+		element: <Rules />,
 	},
 ]);
 
