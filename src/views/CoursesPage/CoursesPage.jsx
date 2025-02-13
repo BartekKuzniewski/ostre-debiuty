@@ -6,8 +6,8 @@ import { Card } from '../../components/Card/Card';
 
 import { CourseDescription } from '../../components/CourseDescription/CourseDescription';
 import { FaRegEnvelope } from 'react-icons/fa';
-import styles from './CoursesPage.module.css';
 import { Button } from '../../components/Button/Button';
+import styles from './CoursesPage.module.css';
 
 export function CoursesPage() {
 	const { name } = useParams();

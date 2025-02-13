@@ -44,37 +44,6 @@ export function Courses() {
 							/>
 						))}
 					</div>
-
-					{/* <div className={styles.cards}>
-						<Card
-							img={hallowenGambit}
-							imgAlt='Król i skoczek w asyście pionów'
-							title='kurs hallowen gambit'
-							price='99zł'
-							description='W tym kursie dowiesz się wszystkich informacji, które pozwolą Ci odnaleźć się w każdej sytuacji związanej z Halloween Gambit. Kurs dla szachistów na każdym poziomie.'
-						/>
-						<Card
-							img={smazonaWatrobka}
-							imgAlt='Król w asyście piona i wieży'
-							title='kurs ataku smażonej wątróbki'
-							price='129zł'
-							description='W tym kursie dowiesz się wszystkich informacji, które pozwolą Ci nienagannie wykonać Atak smażonej wątróbki. Kurs dla szachistów na każdym poziomie.'
-						/>
-						<Card
-							img={twoKnightsDefense}
-							imgAlt='Król w asyście hetmana i piona'
-							title='kurs two knights defense'
-							price='119zł'
-							description='Ten kurs pomoże Ci dogłębnie poznać połączenie technik Two Knights Defense, Max Lange Attack. Kurs dla szachistów na każdym poziomie.'
-						/>
-						<Card
-							img={ruyLopez}
-							imgAlt='Król w asyście pionów'
-							title='KURS OTWARCIA RUY LÓPEZ: JAENISCH GAMBIT'
-							price='199zł'
-							description='Ten kurs pozwoli ci poznać tajniki tego otwarcia. Dowiesz się jak reagować na sytuację na szachownicy oraz na co uważać, żeby samemu nie dać wpędzić się w pułapkę.'
-						/>
-					</div> */}
 				</Wrapper>
 			</main>
 		</Layout>
