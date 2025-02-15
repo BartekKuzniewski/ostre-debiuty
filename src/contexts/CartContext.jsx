@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
 const CartContext = createContext();
 
@@ -12,24 +12,27 @@ export function CartProvider({ children }) {
 		localStorage.setItem('cart', JSON.stringify(cart));
 	}, [cart]);
 
-	function addToCart(course, setCart) {
+	const addToCart = (course) => {
 		setCart((prevCart) => {
 			if (prevCart.find((item) => item.id === course.id)) {
 				return prevCart;
 			}
 			return [...prevCart, course];
 		});
-	}
+		console.log(course);
+	};
 
-	function removeFromCart(id, setCart) {
-		setCart((prevCart) => {
-			prevCart.filter((item) => item.id !== id);
-		});
-	}
+	const removeFromCart = (id) => {
+		setCart((prevCart) => prevCart.filter((item) => item.id !== id));
+	};
 
 	return (
 		<CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
 			{children}
 		</CartContext.Provider>
 	);
+}
+
+export function useCart() {
+	return useContext(CartContext);
 }

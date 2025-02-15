@@ -13,6 +13,7 @@ import { Contact } from './views/Contact/Contact.jsx';
 import { LogIn } from './views/LogIn/LogIn.jsx';
 import { CoursesPage } from './views/CoursesPage/CoursesPage.jsx';
 import { Rules } from './views/Rules/Rules.jsx';
+import { CartProvider } from './contexts/CartContext.jsx';
 
 const router = createBrowserRouter([
 	{
@@ -59,6 +60,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
-		<RouterProvider router={router}></RouterProvider>
+		<CartProvider>
+			<RouterProvider router={router}></RouterProvider>
+		</CartProvider>
 	</StrictMode>
 );

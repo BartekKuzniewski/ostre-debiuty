@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { Layout } from '../../components/Layout/Layout';
+import { useCart } from '../../contexts/CartContext';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
 import { coursesData } from '../../constants/coursesData';
 import { Card } from '../../components/Card/Card';
-
 import { CourseDescription } from '../../components/CourseDescription/CourseDescription';
 import { FaRegEnvelope } from 'react-icons/fa';
 import { Button } from '../../components/Button/Button';
@@ -11,6 +11,7 @@ import styles from './CoursesPage.module.css';
 
 export function CoursesPage() {
 	const { name } = useParams();
+	const { addToCart } = useCart();
 	const course = coursesData.find((c) => c.slug === name);
 
 	if (!course) {
@@ -34,10 +35,13 @@ export function CoursesPage() {
 							<p className={styles.courseDescription}>{course.courseInfo}</p>
 							<div className={styles.purchaseSection}>
 								<p className={styles.delivery}>
-									<FaRegEnvelope size={28} /> <span>Wysyłka natychmiastowa</span>
+									<FaRegEnvelope size={28} />{' '}
+									<span>Wysyłka natychmiastowa</span>
 								</p>
 								<span className={styles.price}>{course.price} zł</span>
-								<Button fontSize='1rem'>do koszyka </Button>
+								<Button fontSize='1rem' onClick={() => addToCart(course)}>
+									do koszyka
+								</Button>
 							</div>
 						</div>
 					</div>

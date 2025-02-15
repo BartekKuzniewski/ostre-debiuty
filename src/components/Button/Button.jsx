@@ -7,6 +7,7 @@ export function Button({
 	hoverColor = '#806e2d',
 	fontSize = '1.1rem',
 	to,
+	onClick,
 }) {
 	const buttonStyle = {
 		'--bg-color': bgColor,
@@ -22,7 +23,7 @@ export function Button({
 	}
 
 	return (
-		<button className={styles.button} style={buttonStyle}>
+		<button className={styles.button} style={buttonStyle} onClick={onClick}>
 			{children}
 		</button>
 	);
