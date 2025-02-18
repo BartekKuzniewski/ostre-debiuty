@@ -37,8 +37,8 @@ export function Quality() {
 							pomożemy Ci rozwijać umiejętności szachowe i wygrywać kolejne
 							pojedynki!
 						</p>
-						<h3>OD PIONA DO KRÓLA</h3>
-						<p>
+						<h3 className={styles.qualityInfoHeadingRight}>OD PIONA DO KRÓLA</h3>
+						<p className={styles.qualityInfoTextRight}>
 							Wejdź na wyższy poziom umiejętności szachowych. Jak to zrobić?
 							Nasza metoda jest taka: przekazujemy Ci cenną wiedzę, integrujemy
 							planszę z lichess.com, dzięki czemu Ty możesz w czasie
