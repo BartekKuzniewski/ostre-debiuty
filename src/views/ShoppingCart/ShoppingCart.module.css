@@ -14,17 +14,29 @@
 	letter-spacing: 0.1rem;
 }
 
+.emptyCart {
+	font-size: 2rem;
+	text-align: center;
+}
+
 .product {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 5em;
+	margin-bottom: 3em;
 }
 
 .leftContent {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 3rem;
+}
+
+.leftContent p {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .imageSection {
@@ -51,6 +63,18 @@
 	text-align: center;
 }
 
+.rightContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.garbage {
+	cursor: pointer;
+}
 
 .paymentContent {
 	display: flex;
@@ -71,7 +95,6 @@
 .price {
 	font-size: 1.4rem;
 	margin-bottom: 0.5em;
-
 }
 
 .productsValue {

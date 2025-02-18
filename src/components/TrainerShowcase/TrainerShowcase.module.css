@@ -4,8 +4,21 @@
 
 .trainerShowcaseImg img {
 	width: 125px;
+	margin-bottom: 1em;
 }
 
 .trainerShowcaseName {
 	font-size: 1.1rem;
+}
+
+@media (max-width: 1200px) {
+	.trainerShowcase {
+		width: 250px;
+	}
+}
+
+@media (max-width: 768px) {
+	.trainerShowcase {
+		margin-top: 1em;
+	}
 }
