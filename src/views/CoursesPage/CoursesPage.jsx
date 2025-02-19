@@ -15,8 +15,9 @@ export function CoursesPage() {
 	const course = coursesData.find((c) => c.slug === name);
 
 	if (!course) {
-		return <h2>Nie znaleziono trenera</h2>;
+		return <h2>Nie znaleziono kursu</h2>;
 	}
+
 	return (
 		<Layout>
 			<section className={styles.coursesPage}>
@@ -38,10 +39,12 @@ export function CoursesPage() {
 									<FaRegEnvelope size={28} />{' '}
 									<span>Wysyłka natychmiastowa</span>
 								</p>
-								<span className={styles.price}>{course.price} zł</span>
-								<Button fontSize='1rem' onClick={() => addToCart(course)}>
-									do koszyka
-								</Button>
+								<div className={styles.priceInfo}>
+									<span className={styles.price}>{course.price} zł</span>
+									<Button fontSize='1rem' onClick={() => addToCart(course)}>
+										do koszyka
+									</Button>
+								</div>
 							</div>
 						</div>
 					</div>
