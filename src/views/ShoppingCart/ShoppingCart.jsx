@@ -41,7 +41,10 @@ export function ShoppingCart() {
 									</div>
 									<div className={styles.rightContent}>
 										<p>{course.price} zł</p>
-										<p onClick={() => removeFromCart(course.id)} className={styles.garbage}>
+										<p
+											onClick={() => removeFromCart(course.id)}
+											className={styles.garbage}
+										>
 											<RiDeleteBin5Line size='32px' />
 										</p>
 									</div>
@@ -53,18 +56,22 @@ export function ShoppingCart() {
 
 								<div className={styles.paymentContent}>
 									<div className={styles.paymentMethods}>
-										<Button className={styles.cartButton}>
+										<div className={styles.paymentMethod}>
 											<img src={blik} alt='BLIK' />
-										</Button>
-										<Button>
+											<span>BLIK</span>
+										</div>
+										<div className={styles.paymentMethod}>
 											<img src={przelewy} alt='Przelewy24' />
-										</Button>
-										<Button>
+											<span>Przelewy24</span>
+										</div>
+										<div className={styles.paymentMethod}>
 											<img src={PayPal} alt='PayPal' />
-										</Button>
-										<Button>
+											<span>PayPal</span>
+										</div>
+										<div className={styles.paymentMethod}>
 											<img src={creditCard} alt='Karta' />
-										</Button>
+											<span>Karta</span>
+										</div>
 									</div>
 									<div className={styles.totalPrice}>
 										<p className={styles.price}>{totalPrice.toFixed(2)} zł</p>

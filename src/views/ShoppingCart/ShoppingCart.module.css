@@ -2,6 +2,7 @@
 	background-color: var(--color-background);
 	width: 100%;
 	padding: 3rem 2rem;
+	margin-top: 100px;
 }
 .shoppingCartHeading {
 	display: flex;
@@ -87,6 +88,22 @@
 	gap: 2rem;
 }
 
+.paymentMethod {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 230px;
+	padding: 1em;
+	border: 2px solid var(--color-dark);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: border 0.5s;
+}
+
+.paymentMethod:hover {
+	border: 2px solid var(--color-gold);
+}
+
 .totalPrice {
 	text-align: right;
 	font-weight: 700;
@@ -100,4 +117,46 @@
 .productsValue {
 	font-size: 1.1rem;
 	margin-bottom: 0.75em;
+}
+
+@media (max-width: 1200px) {
+	.paymentContent {
+		margin-top: 2em;
+		flex-direction: column;
+	}
+	.paymentMethods {
+		margin-bottom: 2em;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.paymentMethod {
+		width: 80%;
+	}
+
+	.totalPrice {
+		text-align: center;
+	}
+}
+
+@media (max-width: 992px) {
+	.leftContent p {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.product {
+		flex-direction: column;
+		gap: 2em;
+	}
+
+	.paymentSection h3 {
+		text-align: center;
+	}
+	.paymentMethod {
+		width: 100%;
+	}
 }
