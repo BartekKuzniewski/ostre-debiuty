@@ -98,7 +98,7 @@ export function CourseDescription({ course }) {
 					{course.name === 'Kurs halloween Gambit' ||
 					course.name === 'Kurs Otwarcia Ruy Lopez: Jaenish Gambit' ? (
 						<div className={styles.creator}>
-							<p>
+							<p className={styles.creatorInfo}>
 								<span>Bartosz Rudecki </span>- charyzmatyczny streamer szachowy.
 								Jego kanał na Twitchu rozwinął niejeden talent i przekonał, że
 								szachy to nie jest tylko sport dla starych ludzi.

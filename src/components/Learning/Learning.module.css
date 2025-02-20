@@ -3,6 +3,11 @@
 	align-items: center;
 	justify-content: center;
     gap: 1em;
+	width: 300px;
+}
+
+.learning div {
+	width: 30px;
 }
 
 .learning p {

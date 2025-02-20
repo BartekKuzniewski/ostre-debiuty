@@ -28,12 +28,17 @@
 .offerItems {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	flex-wrap: wrap;
 	gap: 3rem;
+	justify-content: center;
 }
 
 .learningContainer {
 	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 3rem;
+	justify-content: center;
 }
 
 .courseAppearanceContainer {
@@ -46,10 +51,12 @@
 .courseAppearanceInfo p {
 	font-size: 1.1rem;
 	margin-bottom: 1em;
+	line-height: 1.5em;
 }
 
-.creator p {
+.creatorInfo {
 	font-size: 1.1rem;
+	line-height: 1.5em;
 	margin-bottom: 2em;
 }
 
@@ -66,4 +73,30 @@
 	font-weight: 600;
 	color: var(--color-gold);
 	margin-bottom: 1em;
+}
+
+@media (max-width: 1200px) {
+	.courseAppearanceContainer {
+		flex-direction: column;
+		gap: 2em;
+	}
+	.courseAppearanceImage img {
+		width: 500px;
+	}
+}
+@media (max-width: 768px) {
+	.courseAppearanceImage img {
+		width: 400px;
+	}
+}
+
+@media (max-width: 576px) {
+	.courseAppearanceImage img {
+		width: 300px;
+	}
+
+	.courseAppearanceContainer {
+		flex-direction: column;
+		gap: 1em;
+	}
 }

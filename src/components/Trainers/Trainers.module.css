@@ -48,4 +48,8 @@
 		flex-direction: column;
 		gap: 0;
 	}
+
+	.trainersDetails p {
+		margin-bottom: 1em;
+	}
 }

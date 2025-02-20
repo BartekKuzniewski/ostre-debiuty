@@ -111,10 +111,12 @@
 }
 
 .cards {
-	display: grid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	width: 100%;
 	gap: 1rem;
-	grid-template-columns: repeat(4, 1fr);
 }
 
 @media (max-width: 1200px) {
@@ -145,6 +147,9 @@
 		flex-direction: column;
 		gap: 1.5em;
 	}
+	.courseDescription {
+		text-align: center;
+	}
 }
 
 @media (max-width: 768px) {
@@ -156,11 +161,9 @@
 @media (max-width: 576px) {
 	.courseDescription {
 		font-size: 1rem;
-		text-align: center;
 	}
 
 	.delivery {
 		font-size: 1.1rem;
 	}
 }
-

@@ -15,6 +15,7 @@ import { CoursesPage } from './views/CoursesPage/CoursesPage.jsx';
 import { Rules } from './views/Rules/Rules.jsx';
 import { CartProvider } from './contexts/CartContext.jsx';
 
+
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -61,7 +62,8 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
 		<CartProvider>
-			<RouterProvider router={router}></RouterProvider>
+			<RouterProvider router={router}>
+			</RouterProvider>
 		</CartProvider>
 	</StrictMode>
 );
