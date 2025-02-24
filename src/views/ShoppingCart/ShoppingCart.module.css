@@ -1,6 +1,7 @@
 .shoppingCart {
 	background-color: var(--color-background);
 	width: 100%;
+	min-height: 62.9vh;
 	padding: 3rem 2rem;
 	margin-top: 100px;
 }

@@ -20,6 +20,67 @@ export function Navbar() {
 				<div>
 					<ul className={`${styles.navItems} ${showNavbar && styles.active} `}>
 						<li>
+							<NavLink
+								className={({ isActive }) =>
+									isActive
+										? `${styles.navItem} ${styles.active}`
+										: styles.navItem
+								}
+								to='/kursy'
+							>
+								kursy
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								className={({ isActive }) =>
+									isActive
+										? `${styles.navItem} ${styles.active}`
+										: styles.navItem
+								}
+								to='/trenerzy'
+							>
+								trenerzy
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								className={({ isActive }) =>
+									isActive
+										? `${styles.navItem} ${styles.active}`
+										: styles.navItem
+								}
+								to='/o-nas'
+							>
+								o nas
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								className={({ isActive }) =>
+									isActive
+										? `${styles.navItem} ${styles.active}`
+										: styles.navItem
+								}
+								to='/kontakt'
+							>
+								kontakt
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								className={({ isActive }) =>
+									isActive
+										? `${styles.navItem} ${styles.active}`
+										: styles.navItem
+								}
+								to='/koszyk'
+							>
+								<LuShoppingCart size={20} />
+							</NavLink>
+						</li>
+
+						{/* <li>
 							<NavLink className={styles.navItem} to='/kursy'>
 								kursy
 							</NavLink>
@@ -43,7 +104,7 @@ export function Navbar() {
 							<NavLink className={styles.navItem} to='/koszyk'>
 								<LuShoppingCart />
 							</NavLink>
-						</li>
+						</li> */}
 					</ul>
 					<div className={styles.navBurgerBtn} onClick={handleShowNavbar}>
 						<GiHamburgerMenu />
