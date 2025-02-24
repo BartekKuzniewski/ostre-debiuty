@@ -35,3 +35,10 @@
         gap: 60px;
 	}
 }
+
+@media (max-width: 576px) {
+	.memberImg img {
+		width: 150px;
+	}
+	
+}

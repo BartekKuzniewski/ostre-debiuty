@@ -64,3 +64,43 @@
 		width: 100%;
 	}
 }
+
+@media (max-width: 576px) {
+	.aboutUsHeading {
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+	.aboutUsHeading h2 {
+		font-size: 1.3rem;
+	}
+	.aboutUsHeading svg {
+		width: 50px;
+	}
+
+	.aboutUsSection {
+		margin-bottom: 0;
+	}
+
+	.aboutUsSectionText h3,
+	p {
+		text-align: center;
+	}
+
+	.aboutUsSectionText h3 {
+		font-size: 1.1rem;
+		margin: 2rem 0 0 0;
+	}
+	.knowUsContentInfo span {
+		font-size: 1.1rem;
+	}
+
+	.aboutUsSectionText p {
+		font-size: 1rem;
+		line-height: 1.8rem;
+	}
+
+	.ourTeamHeading {
+		margin-top: 3rem;
+		font-size: 1.5rem;
+	}
+}

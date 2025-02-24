@@ -30,3 +30,15 @@
 	align-items: center;
 	justify-content: center;
 }
+
+@media (max-width: 576px) {
+	.contactHeading {
+		margin-bottom: 1.5rem;
+	}
+	.contactHeading h2 {
+		font-size: 1.4rem;
+	}
+	.contactHeading svg {
+		width: 50px;
+	}
+}

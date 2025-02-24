@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { Logo } from '../Logo/Logo';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { FiUser } from 'react-icons/fi';
-
 import styles from './Navbar.module.css';
 import { NavLink } from 'react-router-dom';
 import { LuShoppingCart } from 'react-icons/lu';
@@ -39,11 +37,6 @@ export function Navbar() {
 						<li>
 							<NavLink className={styles.navItem} to='/kontakt'>
 								kontakt
-							</NavLink>
-						</li>
-						<li>
-							<NavLink className={styles.navItem} to='/zaloguj-sie'>
-								<FiUser />
 							</NavLink>
 						</li>
 						<li>
