@@ -1,5 +1,5 @@
 import { Wrapper } from '../Wrapper/Wrapper';
-import styles from './header.module.css';
+import styles from './Header.module.css';
 
 import headerImage from '../../assets/header-img.svg';
 import { Button } from '../Button/Button';
