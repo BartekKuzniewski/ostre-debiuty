@@ -64,3 +64,27 @@
 		grid-template-columns: 1fr;
 	}
 }
+
+@media (max-width: 576px) {
+	.trustUsHeading {
+		width: 100%;
+		margin-bottom: 2.5rem;
+	}
+	.trustUsHeading h2 {
+		font-size: 1.3rem;
+	}
+	.trustUsHeading svg {
+		width: 50px;
+	}
+
+	.trustUsInfo h3 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	.trustUsInfo p {
+		text-align: center;
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+	}
+}

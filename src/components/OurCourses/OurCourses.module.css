@@ -33,3 +33,16 @@
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
+
+@media (max-width: 576px) {
+	.ourCoursesHeading {
+		width: 100%;
+		margin-bottom: 2.5rem;
+	}
+	.ourCoursesHeading h2 {
+		font-size: 1.3rem;
+	}
+	.ourCoursesHeading svg {
+		width: 50px;
+	}
+}

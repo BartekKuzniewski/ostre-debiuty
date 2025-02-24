@@ -80,3 +80,11 @@
 	font-weight: bold;
 }
 
+@media (max-width: 576px) {
+	.card {
+		height: 470px;
+		width: 280px;
+		gap: 2em;
+	}
+}
+
