@@ -1,5 +1,5 @@
 import { Layout } from '../../components/Layout/Layout';
-import styles from './Aboutus.module.css';
+import styles from './AboutUs.module.css';
 import aboutUs1 from '../../assets/aboutUs1.jpg';
 import aboutUs2 from '../../assets/aboutUs2.jpg';
 import aboutUs3 from '../../assets/aboutUs3.jpg';
