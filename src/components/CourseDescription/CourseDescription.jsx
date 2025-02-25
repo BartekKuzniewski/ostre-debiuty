@@ -2,11 +2,11 @@ import { Offer } from '../Offer/Offer';
 import { Wrapper } from '../Wrapper/Wrapper';
 import { offerData } from '../../constants/offerData';
 import { Learning } from '../Learning/Learning';
-import courseAppearance from '../../assets/courseAppearance.svg';
 import { Trainers } from '../Trainers/Trainers';
 import { Button } from '../../components/Button/Button';
-import bartekImg from '../../assets/bartek.png';
-import igorImg from '../../assets/igor.png';
+import bartekImg from '../../assets/bartek.webp';
+import courseAppearance from '../../assets/courseAppearance.webp';
+import igorImg from '../../assets/igor.webp';
 import styles from './CourseDescription.module.css';
 
 export function CourseDescription({ course }) {

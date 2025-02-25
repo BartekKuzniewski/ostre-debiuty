@@ -1,8 +1,8 @@
 import styles from './TeamMember.module.css';
-import szymon from '../../assets/szymon.svg';
-import patryk from '../../assets/patryk.svg';
-import igor from '../../assets/igor.svg';
-import julia from '../../assets/julia.svg';
+import szymon from '../../assets/szymon.webp';
+import patryk from '../../assets/patryk.webp';
+import igor from '../../assets/igor.webp';
+import julia from '../../assets/julia.webp';
 
 const members = [
 	{

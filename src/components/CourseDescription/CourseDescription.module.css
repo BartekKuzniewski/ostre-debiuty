@@ -48,6 +48,10 @@
 	gap: 6em;
 }
 
+.courseAppearanceImage img {
+	width: 500px;
+}
+
 .courseAppearanceInfo p {
 	font-size: 1.1rem;
 	margin-bottom: 1em;
@@ -79,9 +83,6 @@
 	.courseAppearanceContainer {
 		flex-direction: column;
 		gap: 2em;
-	}
-	.courseAppearanceImage img {
-		width: 500px;
 	}
 }
 @media (max-width: 768px) {

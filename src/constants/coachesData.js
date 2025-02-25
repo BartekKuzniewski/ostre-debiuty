@@ -1,7 +1,7 @@
-import szymon from '../assets/szymon.svg';
-import julia from '../assets/julia.svg';
-import igor from '../assets/igor.svg';
-import patryk from '../assets/patryk.svg';
+import szymon from '../assets/szymon.webp';
+import julia from '../assets/julia.webp';
+import igor from '../assets/igor.webp';
+import patryk from '../assets/patryk.webp';
 
 export const coachesData = [
 	{

@@ -1,8 +1,8 @@
 import { Trainers } from '../Trainers/Trainers';
 import { Wrapper } from '../Wrapper/Wrapper';
 
-import bartekImg from '../../assets/bartek.png';
-import igorImg from '../../assets/igor.png';
+import bartekImg from '../../assets/bartek.webp';
+import igorImg from '../../assets/igor.webp';
 import styles from './KnowUsBetter.module.css';
 
 export function KnowUsBetter() {

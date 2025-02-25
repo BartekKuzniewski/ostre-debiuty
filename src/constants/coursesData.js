@@ -1,7 +1,7 @@
-import hallowenGambit from '../assets/hallowen-gambit.svg';
-import smazonaWatrobka from '../assets/smazona-watrobka.svg';
-import twoKnightDefense from '../assets/two-knights-defense.svg';
-import ruyLopez from '../assets/ruy-lopez.svg';
+import hallowenGambit from '../assets/hallowen-gambit.webp';
+import smazonaWatrobka from '../assets/smazona-watrobka.webp';
+import twoKnightDefense from '../assets/two-knights-defense.webp';
+import ruyLopez from '../assets/ruy-lopez.webp';
 
 export const coursesData = [
 	{

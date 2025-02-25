@@ -1,9 +1,7 @@
 import { Wrapper } from '../Wrapper/Wrapper';
-import styles from './Header.module.css';
-
-import headerImage from '../../assets/header-img.png';
 import { Button } from '../Button/Button';
-
+import headerImage from '../../assets/header-img.webp';
+import styles from './Header.module.css';
 
 export function Header() {
 	return (

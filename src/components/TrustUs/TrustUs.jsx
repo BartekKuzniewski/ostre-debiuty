@@ -2,10 +2,10 @@ import { Wrapper } from '../Wrapper/Wrapper';
 import styles from './TrustUs.module.css';
 
 import trustUsImg from '../../assets/trustUsImg.svg';
-import szymonImg from '../../assets/szymon.svg';
-import juliaImg from '../../assets/julia.svg';
-import igorImg from '../../assets/igor.svg';
-import patrykImg from '../../assets/patryk.svg';
+import szymonImg from '../../assets/szymon.webp';
+import juliaImg from '../../assets/julia.webp';
+import igorImg from '../../assets/igor.webp';
+import patrykImg from '../../assets/patryk.webp';
 import { TrainerShowcase } from '../TrainerShowcase/TrainerShowcase';
 
 export function TrustUs() {
