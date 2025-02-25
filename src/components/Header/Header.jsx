@@ -1,7 +1,7 @@
 import { Wrapper } from '../Wrapper/Wrapper';
 import styles from './Header.module.css';
 
-import headerImage from '../../assets/header-img.svg';
+import headerImage from '../../assets/header-img.png';
 import { Button } from '../Button/Button';
 
 
