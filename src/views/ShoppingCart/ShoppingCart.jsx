@@ -23,7 +23,15 @@ export function ShoppingCart() {
 					</div>
 
 					{cart.length === 0 ? (
-						<p className={styles.emptyCart}>Twój koszyk jest pusty.</p>
+						<div className={styles.emptyCart}>
+							<p>
+								WYGLĄDA NA TO, ŻE NIE MASZ NIC W KOSZYKU. <br /> POWINNIŚMY TO
+								ZMIENIĆ!
+							</p>
+							<Button to={`/kursy`} fontSize='1rem'>
+								WYBIERZ KURS DLA SIEBIE
+							</Button>
+						</div>
 					) : (
 						<>
 							{cart.map((course) => (

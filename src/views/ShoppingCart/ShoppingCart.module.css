@@ -1,7 +1,7 @@
 .shoppingCart {
 	background-color: var(--color-background);
 	width: 100%;
-	min-height: 62.9vh;
+	/* min-height: 62.9vh; */
 	padding: 3rem 2rem;
 	margin-top: 100px;
 }
@@ -17,8 +17,16 @@
 }
 
 .emptyCart {
-	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	font-size: 1.5rem;
+}
+.emptyCart p {
 	text-align: center;
+	line-height: 2.5rem;
 }
 
 .product {
@@ -159,5 +167,9 @@
 	}
 	.paymentMethod {
 		width: 100%;
+	}
+
+	.emptyCart p {
+	font-size: 1.4rem;
 	}
 }

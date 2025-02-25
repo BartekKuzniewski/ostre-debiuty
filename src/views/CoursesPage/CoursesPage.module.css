@@ -118,7 +118,32 @@
 	width: 100%;
 	gap: 1rem;
 }
+.modal {
+	position: absolute;
+	top: 120px;
+	right: 10px;
+	padding: 1rem 2rem;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: bold;
+	z-index: 1000;
+	animation: fadeInOut 3s ease-in-out;
+}
 
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
 @media (max-width: 1200px) {
 	.cards {
 		grid-template-columns: repeat(2, 1fr);

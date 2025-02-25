@@ -19,7 +19,6 @@ export function CartProvider({ children }) {
 			}
 			return [...prevCart, course];
 		});
-		console.log(course);
 	};
 
 	const removeFromCart = (id) => {

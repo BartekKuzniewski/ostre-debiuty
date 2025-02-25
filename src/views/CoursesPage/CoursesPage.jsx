@@ -8,14 +8,32 @@ import { CourseDescription } from '../../components/CourseDescription/CourseDesc
 import { FaRegEnvelope } from 'react-icons/fa';
 import { Button } from '../../components/Button/Button';
 import styles from './CoursesPage.module.css';
+import { useState } from 'react';
 
 export function CoursesPage() {
 	const { name } = useParams();
-	const { addToCart } = useCart();
+	const { cart, addToCart } = useCart();
 	const course = coursesData.find((c) => c.slug === name);
+
+	const [modal, setModal] = useState({ show: false, message: '', color: '' });
 
 	if (!course) {
 		return <h2>Nie znaleziono kursu</h2>;
+	}
+
+	function handleAddToCart(course) {
+		const isInCart = cart.some((item) => item.id === course.id);
+		setModal({
+			show: true,
+			message: isInCart
+				? 'Posiadasz już ten kurs w koszyku'
+				: 'Pomyślnie dodano kurs do koszyka',
+			color: isInCart ? 'rgba(125, 0, 0, 0.8)' : 'rgba(13, 92, 2, 0.8)',
+		});
+
+		if (!isInCart) addToCart(course);
+
+		setTimeout(() => setModal((prev) => ({ ...prev, show: false })), 3000);
 	}
 
 	return (
@@ -23,6 +41,14 @@ export function CoursesPage() {
 			<section className={styles.coursesPage}>
 				<Wrapper>
 					<div className={styles.container}>
+						{modal.show && (
+							<div
+								className={styles.modal}
+								style={{ backgroundColor: modal.color }}
+							>
+								{modal.message}
+							</div>
+						)}
 						<div className={styles.imageSection}>
 							<img
 								src={course.image}
@@ -41,7 +67,10 @@ export function CoursesPage() {
 								</p>
 								<div className={styles.priceInfo}>
 									<span className={styles.price}>{course.price} zł</span>
-									<Button fontSize='1rem' onClick={() => addToCart(course)}>
+									<Button
+										fontSize='1rem'
+										onClick={() => handleAddToCart(course)}
+									>
 										do koszyka
 									</Button>
 								</div>
