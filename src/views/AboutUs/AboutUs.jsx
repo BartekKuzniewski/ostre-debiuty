@@ -47,7 +47,7 @@ export function AboutUs() {
 							</p>
 						</div>
 						<div className={styles.aboutUsImg}>
-							<img src={aboutUs1} alt='' />
+							<img src={aboutUs1} alt='Figury na szachownicy' />
 						</div>
 					</div>
 					<div className={styles.aboutUsSection}>
@@ -69,7 +69,7 @@ export function AboutUs() {
 							</p>
 						</div>
 						<div className={styles.aboutUsImg}>
-							<img src={aboutUs2} alt='' />
+							<img src={aboutUs2} alt='Mężczyzna przesuwający pionka na szachownicy' />
 						</div>
 					</div>
 					<div className={styles.aboutUsSection}>
@@ -89,7 +89,7 @@ export function AboutUs() {
 							</p>
 						</div>
 						<div className={styles.aboutUsImg}>
-							<img src={aboutUs3} alt='' />
+							<img src={aboutUs3} alt='Klepsydra na tle szachownicy' />
 						</div>
 					</div>
 

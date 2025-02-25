@@ -19,6 +19,8 @@ export const coursesData = [
 		],
 		price: 99,
 		image: hallowenGambit,
+		imgAlt:
+			'Król i skoczek symbolizujący dynamiczny i ryzykowny Halloween Gambit',
 	},
 	{
 		id: 2,
@@ -35,6 +37,8 @@ export const coursesData = [
 		],
 		price: 129,
 		image: smazonaWatrobka,
+		imgAlt:
+			'Szachista w zamyśleniu nad figurami, przedstawiający agresywną i pułapkową strategię Ataku Smażonej Wątróbki',
 	},
 	{
 		id: 3,
@@ -52,6 +56,7 @@ export const coursesData = [
 
 		price: 119,
 		image: twoKnightDefense,
+		imgAlt: 'Król w asyście pionka i wieży',
 	},
 	{
 		id: 4,
@@ -70,5 +75,6 @@ export const coursesData = [
 
 		price: 199,
 		image: ruyLopez,
+		imgAlt: 'Król na tronie w asyście pionków',
 	},
 ];
