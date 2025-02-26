@@ -30,7 +30,7 @@
 	justify-content: center;
 }
 
-.contentLeft img {
+.image {
 	width: 220px;
 	margin-bottom: 1.5em;
 }
@@ -64,5 +64,35 @@
 
 	.contentRight {
 		text-align: center;
+	}
+
+	.coachPageHeading h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.coachPageHeading h2 {
+		font-size: 1.4rem;
+	}
+
+	.image {
+		width: 180px;
+	}
+
+	.contentLeft h3 {
+		font-size: 1.3rem;
+	}
+
+	.contentLeft p {
+		font-size: 1.1em;
+	}
+
+	.contentRight h3 {
+		font-size: 1.3rem;
+	}
+	.contentRight p {
+		font-size: 1em;
+		line-height: 1.8em;
 	}
 }
