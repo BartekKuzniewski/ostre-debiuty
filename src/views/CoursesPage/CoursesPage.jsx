@@ -81,24 +81,26 @@ export function CoursesPage() {
 			</section>
 			<CourseDescription course={course} />
 			<section className={styles.notLookingFor}>
-				<h3>to nie tego szukasz?</h3>
-				<p>
-					Sprawdź nasze inne propozycje kursów, a na pewno znajdziesz coś co
-					odpowiada twojemu poziomowi.
-				</p>
-				<div className={styles.cards}>
-					{coursesData.map((course) => (
-						<Card
-							key={course.id}
-							img={course.image}
-							slug={course.slug}
-							imgAlt={course.imgAlt}
-							title={course.name}
-							price={course.price}
-							description={course.shortDescription}
-						/>
-					))}
-				</div>
+				<Wrapper>
+					<h3 className={styles.notLookingForHeading}>to nie tego szukasz?</h3>
+					<p className={styles.notLookingForText}>
+						Sprawdź nasze inne propozycje kursów, a na pewno znajdziesz coś co
+						odpowiada twojemu poziomowi.
+					</p>
+					<div className={styles.cards}>
+						{coursesData.map((course) => (
+							<Card
+								key={course.id}
+								img={course.image}
+								slug={course.slug}
+								imgAlt={course.imgAlt}
+								title={course.name}
+								price={course.price}
+								description={course.shortDescription}
+							/>
+						))}
+					</div>
+				</Wrapper>
 			</section>
 		</Layout>
 	);

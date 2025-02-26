@@ -113,7 +113,7 @@ export function CourseDescription({ course }) {
 						</div>
 					) : (
 						<div className={styles.creator}>
-							<p>
+							<p className={styles.creatorInfo}>
 								<span>Igor Janik </span> - utytułowany król szachów, Arcymistrz
 								Szachowy, wielokrotny medalista mistrzostw w Polsce i na
 								świecie, Wicemistrz Świata Juniorów, prawdziwy szachowy
