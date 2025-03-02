@@ -1,6 +1,7 @@
 import { Wrapper } from '../Wrapper/Wrapper';
 import { Button } from '../Button/Button';
 import headerImage from '../../assets/header-img.webp';
+import headerImageSmall from '../../assets/header-img-small.webp';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -21,11 +22,15 @@ export function Header() {
 						</p>
 						<Button to={`/kursy`}> Zobacz więcej</Button>
 					</div>
+
 					<div className={styles.headerImg}>
-						<img
-							src={headerImage}
-							alt='Król siedzący na tronie w otoczeniu pionów szachowych'
-						/>
+						<picture>
+							<source media='(max-width: 576px)' srcSet={headerImageSmall} />
+							<img
+								src={headerImage}
+								alt='Król siedzący na tronie w otoczeniu pionów szachowych'
+							/>
+						</picture>
 					</div>
 				</div>
 			</Wrapper>

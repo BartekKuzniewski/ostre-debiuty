@@ -83,3 +83,8 @@
 	}
 }
 
+@media (max-width: 576px) {
+	.header img {
+		width: 280px;
+	}
+}
