@@ -1,16 +1,28 @@
 import { Layout } from '../../components/Layout/Layout';
-import styles from './AboutUs.module.css';
 import aboutUs1 from '../../assets/aboutUs1.jpg';
 import aboutUs2 from '../../assets/aboutUs2.jpg';
 import aboutUs3 from '../../assets/aboutUs3.jpg';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
 import { TeamMember } from '../../components/TeamMember/TeamMember';
-
-
+import { Helmet } from 'react-helmet-async';
+import styles from './AboutUs.module.css';
 
 export function AboutUs() {
 	return (
 		<Layout>
+			<Helmet>
+				<title>
+					Ostre Debiuty - Kim Jesteśmy? Poznaj Naszą Pasję do Szachów
+				</title>
+				<meta
+					name='description'
+					content='Dowiedz się więcej o Ostrych Debiutach, naszej misji i zespole pasjonatów, którzy tworzą najlepsze kursy szachowe online.'
+				/>
+				<meta
+					name='keywords'
+					content='Ostre Debiuty, o nas, zespół, misja, kursy szachowe, szachy'
+				/>
+			</Helmet>
 			<main className={styles.aboutUs}>
 				<Wrapper>
 					<div className={styles.aboutUsHeading}>
@@ -69,7 +81,10 @@ export function AboutUs() {
 							</p>
 						</div>
 						<div className={styles.aboutUsImg}>
-							<img src={aboutUs2} alt='Mężczyzna przesuwający pionka na szachownicy' />
+							<img
+								src={aboutUs2}
+								alt='Mężczyzna przesuwający pionka na szachownicy'
+							/>
 						</div>
 					</div>
 					<div className={styles.aboutUsSection}>
@@ -93,7 +108,7 @@ export function AboutUs() {
 						</div>
 					</div>
 
-					<div >
+					<div>
 						<h3 className={styles.ourTeamHeading}> Nasz Zespół</h3>
 						<TeamMember />
 					</div>

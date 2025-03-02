@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { ContactForm } from '../../components/ContactForm/ContactForm';
 import { Layout } from '../../components/Layout/Layout';
 import { Wrapper } from '../../components/Wrapper/Wrapper';
@@ -6,6 +7,20 @@ import styles from './Contact.module.css';
 export function Contact() {
 	return (
 		<Layout>
+			<Helmet>
+				<title>
+					Ostre Debiuty - Skontaktuj Się z Nami i Rozpocznij Szachową Przygodę
+				</title>
+				<meta
+					name='description'
+					content='Skontaktuj się z nami! Masz pytania dotyczące kursów, trenerów lub strony? Chętnie pomożemy.'
+				/>
+				<meta
+					name='keywords'
+					content='kontakt, Ostre Debiuty, pytania, pomoc, formularz kontaktowy'
+				/>
+			
+			</Helmet>
 			<main className={styles.contact}>
 				<Wrapper>
 					<div className={styles.contactHeading}>
