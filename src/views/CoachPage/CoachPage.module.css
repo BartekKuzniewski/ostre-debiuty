@@ -75,6 +75,9 @@
 	.coachPageHeading h2 {
 		font-size: 1.4rem;
 	}
+	.coachPageHeading img {
+		width: 50px;
+	}
 
 	.image {
 		width: 180px;

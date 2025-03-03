@@ -69,11 +69,12 @@
 	.trustUsHeading {
 		width: 100%;
 		margin-bottom: 2.5rem;
+		gap: 0;
 	}
 	.trustUsHeading h2 {
 		font-size: 1.3rem;
 	}
-	.trustUsHeading svg {
+	.trustUsHeading img {
 		width: 50px;
 	}
 

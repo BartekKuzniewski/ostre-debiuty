@@ -24,3 +24,9 @@
 	width: 100%;
 	gap: 1rem;
 }
+
+@media (max-width: 576px) {
+	.coursesHeading img {
+		width: 50px;
+	}
+}
