@@ -10,7 +10,7 @@ export function Header() {
 			<Wrapper>
 				<div className={styles.headerContent}>
 					<div className={styles.headerText}>
-						<h2>ZOSTAŃ KRÓLEM SZACHÓW</h2>
+						<h1>ZOSTAŃ KRÓLEM SZACHÓW</h1>
 						<h3>
 							CHCESZ RZĄDZIĆ SZACHOWNICĄ I WYGRYWAĆ WSZYSTKIE BITWY NICZYM
 							JAGIEŁŁO POD GRUNWALDEM?

@@ -1,8 +1,19 @@
-# React + Vite
+# Ostre Debiuty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ostre Debiuty is a site where we can purchase chess courses online and improve our chess skills in cooperation with grandmasters.
 
-Currently, two official plugins are available:
+## Live
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://ostre-debiuty.vercel.app/
+
+## Based On
+
+https://www.ostre-debiuty.pl/
+
+## 🛠 Skills
+
+- React
+- React Router
+
+## Features
+
