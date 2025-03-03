@@ -75,36 +75,11 @@ export function Navbar() {
 										: styles.navItem
 								}
 								to='/koszyk'
+								aria-label='Przejdź do koszyka'
 							>
 								<LuShoppingCart size={20} />
 							</NavLink>
 						</li>
-
-						{/* <li>
-							<NavLink className={styles.navItem} to='/kursy'>
-								kursy
-							</NavLink>
-						</li>
-						<li>
-							<NavLink className={styles.navItem} to='/trenerzy'>
-								trenerzy
-							</NavLink>
-						</li>
-						<li>
-							<NavLink className={styles.navItem} to='/o-nas'>
-								o nas
-							</NavLink>
-						</li>
-						<li>
-							<NavLink className={styles.navItem} to='/kontakt'>
-								kontakt
-							</NavLink>
-						</li>
-						<li>
-							<NavLink className={styles.navItem} to='/koszyk'>
-								<LuShoppingCart />
-							</NavLink>
-						</li> */}
 					</ul>
 					<div className={styles.navBurgerBtn} onClick={handleShowNavbar}>
 						<GiHamburgerMenu />
